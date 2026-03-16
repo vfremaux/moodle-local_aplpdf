@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<libraries>
+  <library>
+    <location>mergePDF</location>
+    <name>MergePDF</name>
+    <license></license>
+    <version></version>
+    <licenseversion></licenseversion>
+  </library>
+  <library>
+    <location>tcpdf</location>
+    <name>Tcpdf</name>
+    <license></license>
+    <version></version>
+    <licenseversion></licenseversion>
+  </library>
+  <library>
+    <location>xpdf</location>
+    <name>XPdf Pdf extractor</name>
+    <license></license>
+    <version></version>
+    <licenseversion></licenseversion>
+  </library>
+  <library>
+    <location>pdf2svg</location>
+    <name>PDF to SVG Converter</name>
+    <license>SDK/Apache2</license>
+    <version></version>
+    <licenseversion></licenseversion>
+  </library>
+</libraries>
