@@ -108,7 +108,7 @@
  */
 
 // TCPDF configuration
-require_once($CFG->dirroot.'/local/vflibs//tcpdf/tcpdf.php');
+require_once($CFG->dirroot.'/local/aplpdf//tcpdf/tcpdf.php');
 
 /**
  * @class TCPDF
@@ -159,13 +159,13 @@ class VFTCPDF extends TCPDF {
 
         $this->setImageScale($this->image_scale);
 
-        $config = get_config('local_vflibs');
+        $config = get_config('local_aplpdf');
         $fs = get_file_storage();
         $context = context_system::instance();
 
         if (!empty($config->enablelocalpdf)) {
 
-            $fonts = glob($CFG->dirroot.'/local/vflibs/vftcpdf/fonts/*.php');
+            $fonts = glob($CFG->dirroot.'/local/aplpdf/vftcpdf/fonts/*.php');
             foreach ($fonts as $f) {
 
                 $style = '';
