@@ -23,6 +23,20 @@
  * @license     https://www.gnu.org/copyleft/gpl.html GNU Public License
  */
 
+$string['configdefaulttemplate'] = 'Modèle de document par défaut';
+$string['configdefaulttemplate_desc'] = 'Un modèle de document par défaut pour le plugin. Certains plugins pourront utiliser des modèles spécifiques.';
+$string['configdocborderimage'] = 'Image des bordures';
+$string['configdocfooterimage'] = 'Pied de page';
+$string['configdocheaderimage'] = 'Image d\'en-tête';
+$string['configdocinnerfooterimage'] = 'Pied de page intérieur';
+$string['configdocinnerheaderimage'] = 'En tête intérieure';
+$string['configdoclogoimage'] = 'Image de logo';
+$string['configdocwatermarkimage'] = 'Image de Filigranne.';
 $string['configenablelocalpdf'] = 'Activer la version locale de tcpdf';
 $string['configenablelocalpdf_desc'] = 'Active la version locale de TCPDF avec des polices et fonctionnalités en plus. Ceci nécessite de protéger la distribution standard. Plus d\'informations dans le fichier README.txt.';
+$string['configpdfenabled'] = 'Activer l\'édition PDF';
+$string['configpdfenabled_desc'] = 'Active la génération en PDF des factures et autres documents de la boutique';
+$string['configpdfgeneration'] = 'Paramètres de génération PDF';
+$string['configprintconfig'] = 'Configuration générale des documents';
+$string['configprintconfig_desc'] = 'Une structure sérialisée d\'attributs de positionnement et de rendu';
 $string['pluginname'] = 'Librairies PDF additionnelles pour les plugins APL';
