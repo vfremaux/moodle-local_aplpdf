@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version  = 2026021900;   // The (date) version of this plugin.
+$plugin->version  = 2026041300;   // The (date) version of this plugin.
 $plugin->requires = 2022112801;   // Requires this Moodle version.
 $plugin->component = 'local_aplpdf';
-$plugin->release = '4.5.0 (Build 2026021900)';   // Release.
-$plugin->maturity = MATURITY_STABLE;
-$plugin->supported = [403, 405];
+$plugin->release = '5.1.0 (Build 2026041300)';   // Release.
+$plugin->maturity = MATURITY_RC;
+$plugin->supported = [500, 503];
 
 // Non moodle attributes.
-$plugin->codeincrement = '4.5.0002';
+$plugin->codeincrement = '5.1.0002';
 $plugin->privacy = 'public';
