@@ -76,7 +76,7 @@ if (!defined('PDF_DEFAULT_FONT')) {
 /** tell tcpdf it is configured here instead of in its own config file */
 define('K_TCPDF_EXTERNAL_CONFIG', 1);
 
-// The configuration constants needed by tcpdf follow
+// The configuration constants needed by tcpdf follow.
 
 /**
  * Init K_PATH_FONTS and PDF_FONT_NAME_MAIN constant.
@@ -91,14 +91,15 @@ function tcpdf_init_k_font_path() {
 
     if (!defined('K_PATH_FONTS')) {
         if (is_dir(PDF_CUSTOM_FONT_PATH)) {
-            // NOTE:
-            //   There used to be an option to have just one file and having it set as default
-            //   but that does not make sense any more because add-ons using standard fonts
-            //   would fail very badly, also font families consist of multiple php files for
-            //   regular, bold, italic, etc.
+            /* NOTE:
+             *   There used to be an option to have just one file and having it set as default
+             *   but that does not make sense any more because add-ons using standard fonts
+             *   would fail very badly, also font families consist of multiple php files for
+             *   regular, bold, italic, etc.
+             */
 
             // Check for some standard font files if present and if not do not use the custom path.
-            $somestandardfiles = array('courier',  'helvetica', 'times', 'symbol', 'zapfdingbats', 'freeserif', 'freesans');
+            $somestandardfiles = ['courier',  'helvetica', 'times', 'symbol', 'zapfdingbats', 'freeserif', 'freesans'];
             $missing = false;
             foreach ($somestandardfiles as $file) {
                 if (!file_exists(PDF_CUSTOM_FONT_PATH . $file . '.php')) {
@@ -141,7 +142,7 @@ define('K_BLANK_IMAGE', K_PATH_IMAGES . 'pix/spacer.gif');
 define('K_CELL_HEIGHT_RATIO', 1.25);
 
 /** reduction factor for small font */
-define('K_SMALL_RATIO', 2/3);
+define('K_SMALL_RATIO', 2 / 3);
 
 /** Throw exceptions from errors so they can be caught and recovered from. */
 define('K_TCPDF_THROW_EXCEPTION_ERROR', true);
