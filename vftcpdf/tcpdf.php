@@ -165,7 +165,7 @@ class VFTCPDF extends TCPDF {
 
         if (!empty($config->enablelocalpdf)) {
 
-            $fonts = glob($CFG->dirroot.'/local/aplpdf/vftcpdf/fonts/*.php');
+            $fonts = glob($CFG->dirroot.'/local/aplpdf/tcpdf/fonts/*.php');
             foreach ($fonts as $f) {
 
                 $style = '';
