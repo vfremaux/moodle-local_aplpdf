@@ -28,4 +28,18 @@
     <version></version>
     <licenseversion></licenseversion>
   </library>
+  <library>
+    <location>__reference</location>
+    <name>Reference files from Moodle core (patch base)</name>
+    <license>GNU</license>
+    <version></version>
+    <licenseversion></licenseversion>
+  </library>
+  <library>
+    <location>__patch</location>
+    <name>Patched Moodle core files</name>
+    <license>GNU</license>
+    <version></version>
+    <licenseversion></licenseversion>
+  </library>
 </libraries>

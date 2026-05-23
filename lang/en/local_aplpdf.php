@@ -48,4 +48,3 @@ $string['configprintconfig'] = 'Pdf general configuration';
 $string['configprintconfig_desc'] = 'A serialized set of printing attributes';
 $string['pluginname'] = 'Alternate PDF libraries for APL plugins';
 $string['privacy:metadata'] = 'The Local AplPdf plugin does not store any personal data about any user.';
-
