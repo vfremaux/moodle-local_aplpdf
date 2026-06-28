@@ -15,9 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package   local_vflibs
- * @category  local
+ * Global settings.
+ *
+ * @package   local_aplpdf
  * @author    Valery Fremaux (valery.fremaux@gmail.com)
+ * @copyright (C) 2026 Valery Fremaux (https://www.activeprolearn.com)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();

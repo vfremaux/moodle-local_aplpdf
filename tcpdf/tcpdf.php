@@ -1983,7 +1983,7 @@ class TCPDF {
         // set document creation and modification timestamp
         $this->doc_creation_timestamp = time();
         $this->doc_modification_timestamp = $this->doc_creation_timestamp;
-        // get default graphic vars
+        // Get default graphic vars.
         $this->default_graphic_vars = $this->getGraphicVars();
         $this->header_xobj_autoreset = false;
         $this->custom_xmp = '';
@@ -4759,7 +4759,7 @@ class TCPDF {
             $y = $this->y;
         }
         // check page for no-write regions and adapt page margins if necessary
-        list($x, $y) = $this->checkPageRegions($h, $x, $y);
+        [$x, $y] = $this->checkPageRegions($h, $x, $y);
         // recalculate coordinates to account for graphic transformations
         if (isset($this->transfmatrix) AND !empty($this->transfmatrix)) {
             for ($i=$this->transfmatrix_key; $i > 0; --$i) {
@@ -5087,7 +5087,7 @@ class TCPDF {
         }
         $k = $this->k;
         // check page for no-write regions and adapt page margins if necessary
-        list($this->x, $this->y) = $this->checkPageRegions($h, $this->x, $this->y);
+        [$this->x, $this->y] = $this->checkPageRegions($h, $this->x, $this->y);
         if ($this->rtl) {
             $x = $this->x - $this->cell_margin['R'];
         } else {
@@ -5800,7 +5800,7 @@ class TCPDF {
             $x = $this->GetX();
         }
         // check page for no-write regions and adapt page margins if necessary
-        list($x, $y) = $this->checkPageRegions(0, $x, $y);
+        [$x, $y] = $this->checkPageRegions(0, $x, $y);
         // apply margins
         $oy = $y + $mc_margin['T'];
         if ($this->rtl) {
@@ -6287,7 +6287,7 @@ class TCPDF {
      */
     public function Write($h, $txt, $link='', $fill=false, $align='', $ln=false, $stretch=0, $firstline=false, $firstblock=false, $maxh=0, $wadj=0, $margin='') {
         // check page for no-write regions and adapt page margins if necessary
-        list($this->x, $this->y) = $this->checkPageRegions($h, $this->x, $this->y);
+        [$this->x, $this->y] = $this->checkPageRegions($h, $this->x, $this->y);
         if (strlen($txt) == 0) {
             // fix empty text
             $txt = ' ';
@@ -6718,7 +6718,7 @@ class TCPDF {
      * @protected
      */
     protected function getRemainingWidth() {
-        list($this->x, $this->y) = $this->checkPageRegions(0, $this->x, $this->y);
+        [$this->x, $this->y] = $this->checkPageRegions(0, $this->x, $this->y);
         if ($this->rtl) {
             return ($this->x - $this->lMargin);
         } else {
@@ -6843,7 +6843,7 @@ class TCPDF {
             $y = $this->y;
         }
         // check page for no-write regions and adapt page margins if necessary
-        list($x, $y) = $this->checkPageRegions($h, $x, $y);
+        [$x, $y] = $this->checkPageRegions($h, $x, $y);
         $exurl = ''; // external streams
         $imsize = FALSE;
         // check if we are passing an image as file or string
@@ -6900,7 +6900,7 @@ class TCPDF {
         // file hash
         $filehash = md5($file);
         // get original image width and height in pixels
-        list($pixw, $pixh) = $imsize;
+        [$pixw, $pixh] = $imsize;
         // calculate image width and height on document
         if (($w <= 0) AND ($h <= 0)) {
             // convert image size to document unit
