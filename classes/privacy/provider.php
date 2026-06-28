@@ -17,7 +17,7 @@
 /**
  * Privacy Subsystem.
  *
- * @package     local_aplcore
+ * @package     local_aplpdf
  * @author      Valery Fremaux (valery.fremaux@gmail.com)
  * @copyright   2017 Valery Fremaux (activeprolearn.com)
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
