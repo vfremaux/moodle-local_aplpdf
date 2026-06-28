@@ -1983,7 +1983,7 @@ class TCPDF {
         // set document creation and modification timestamp
         $this->doc_creation_timestamp = time();
         $this->doc_modification_timestamp = $this->doc_creation_timestamp;
-        // get default graphic vars
+        // Get default graphic vars.
         $this->default_graphic_vars = $this->getGraphicVars();
         $this->header_xobj_autoreset = false;
         $this->custom_xmp = '';
