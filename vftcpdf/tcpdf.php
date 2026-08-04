@@ -165,7 +165,7 @@ class VFTCPDF extends TCPDF {
 
         if (!empty($config->enablelocalpdf)) {
 
-            $fonts = glob($CFG->dirroot.'/local/aplpdf/vftcpdf/fonts/*.php');
+            $fonts = glob($CFG->dirroot.'/local/aplpdf/tcpdf/fonts/*.php');
             foreach ($fonts as $f) {
 
                 $style = '';
@@ -208,7 +208,7 @@ class VFTCPDF extends TCPDF {
             $this->setBaseW($this->getPageWidth() - (2 * $y) - 10);
 
             // Some standard graphic objects.
-            $wmark = new StdClass;
+            $wmark = new StdClass();
             $wmark->x = $this->getBaseX();
             $wmark->y = $this->getBaseY();
             $wmark->w = $this->getPageWidth() - ($wmark->x * 2);
@@ -237,7 +237,7 @@ class VFTCPDF extends TCPDF {
 
             // This is a default 'header' custom object, if not overriden after init.
 
-            $header = new StdClass;
+            $header = new StdClass();
             $header->x = $this->basex;
             $header->y = $this->basey;
             $header->w = $this->getPageWidth() - (2 * $this->basex);
@@ -275,7 +275,7 @@ class VFTCPDF extends TCPDF {
 
             // This is a default 'footer' custom object, if not overriden after init.
 
-            $footer = new StdClass;
+            $footer = new StdClass();
             $footer->x = $this->basex;
             $footer->y = $this->getPageHeight() - (2 * $this->basey);
             $footer->w = $this->getPageWidth() - (2 * $this->basey);;
@@ -310,7 +310,7 @@ class VFTCPDF extends TCPDF {
                 $this->addCustomObject('innerfooter', $innerfooter);
             }
 
-            $logo = new StdClass;
+            $logo = new StdClass();
             $logo->x = $this->getBaseX();
             $logo->y = $this->getBaseY();
             $logo->w = '';

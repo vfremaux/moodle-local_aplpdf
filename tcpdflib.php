@@ -27,8 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $config = get_config('local_aplpdf');
 
-require_once($CFG->dirroot.'/local/aplpdf/lib.php');
-
 if (!class_exists('local_pdf')) {
 
     if (!class_exists('VFTCPDF')) {
@@ -51,12 +49,12 @@ if (!class_exists('local_pdf')) {
             $r = hexdec($matches[1]);
             $g = hexdec($matches[2]);
             $b = hexdec($matches[3]);
-            return array($r, $g, $b);
+            return [$r, $g, $b];
         }
         if ($reverse) {
-            return array(255 - $r,255 - $g,255 - $b);
+            return [255 - $r,255 - $g,255 - $b];
         }
-        return array(0,0,0);
+        return [0,0,0];
     }
 
     /**
